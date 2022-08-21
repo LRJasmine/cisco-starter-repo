@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Packet />
       <div className="flex flex-wrap">
         <Exhibit exhibitheading="IPv4" exhibitcomponent={<PublicIP ip="ipv6" />} />
         <Exhibit exhibitheading="IPv6" exhibitcomponent={<PublicIP ip="ipv6" />} />
+        <Exhibit exhibitheading="Packet Latency" exhibitcomponent={<Packet />} />
       </div>
     </div>
   );
